@@ -1,5 +1,6 @@
 "use client";
 import AuthModal from "@/components/AuthModal";
+import UploadModal from "@/components/UploadModal";
 // import SubscribeModal from "@/components/SubscribeModal";
 // import UploadModal from "@/components/UploadModal";
 import { ProductWithPrices } from "@/types";
@@ -24,6 +25,7 @@ const ModalProvider: React.FC<ModalProviderProps> = ({
   return (
     <>
       <AuthModal />
+      <UploadModal />
       {/* <UploadModal />
       <SubscribeModal products={products} /> */}
     </>
