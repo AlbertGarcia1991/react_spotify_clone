@@ -11,7 +11,10 @@ interface MediaItemProps {
   onClick?: (id: string) => void;
 }
 
-const MediaItem: React.FC<MediaItemProps> = ({ onClick, data }) => {
+const MediaItem: React.FC<MediaItemProps> = ({
+  onClick,
+  data
+}) => {
   const imageUrl = useLoadImage(data);
   const player = usePlayer();
 

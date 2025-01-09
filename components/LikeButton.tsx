@@ -20,6 +20,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({ songId }) => {
   const { user } = useUser();
 
   const [isLiked, setIsLiked] = useState(false);
+  
   useEffect(() => {
     if (!user?.id) {
       return;
